@@ -1,0 +1,12 @@
+service: "service:image_search_engine_service"
+labels:
+  owner: Raj
+  stage: dev
+include:
+  - "*.py"
+python:
+  packages:
+    - torch
+    - torchvision
+    - requests
+    - pillow
